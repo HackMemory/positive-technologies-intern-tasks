@@ -83,7 +83,10 @@ c. Для того, чтобы с помощью регулярного выра
 a. [https://github.com/librenms/librenms/pull/9537/commits/271191c82dbefe58bdc05f302c4532e798f10624](https://github.com/librenms/librenms/pull/9537/commits/271191c82dbefe58bdc05f302c4532e798f10624)
 
 b. **snmp.inc.php** – _проблема с экранированием_
+
+```php
 $cmd .= " -c '".$device['community']."'"; // нет экранирования строки
+```
 
 **capture.inc.php** – _popen_ даст выполнить вредоносную строку
 ```php
