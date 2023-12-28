@@ -9,7 +9,7 @@
 # Запуск
 
 ```
-python task2.py [host] [username] [password file]
+python task2.py <host> <username> <password_file> [num_threads=1]
 ```
 
 # Иследование уязвимости
